@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CASANOVA</title>
+        <link rel="icon" href="../Imagenes/Logo_Casa_Nova.png">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../script-final.js"></script>
+    </head>
+    <body>
+        <div class="container" id="Marca"> <!--Franja superior con nombre e ícono de la página-->
+            <div class="item" id="Nombre-Marca">
+                <h1>CASA NOVA</h1>
+            </div>
+            <div class="container" id="indice"> 
+                <div class="item-barra" id="home" onclick="dirigirAHomeDesdeCompra()">
+                    HOME
+                </div>
+                <div class="item-barra" id="login" onclick="dirigirALoginDesdeCompra()">
+                    LOGIN
+                </div>
+            </div>
+            <div class="item">
+                <img src="../Imagenes/Logo_Casa_Nova_Sin_fondo.png" id="Icono-Marca">
+            </div>
+        </div>
+        <h1 id="descripción de compra">Estás comprando un Especiero de madera.</h1>
+        <div class="container" id="Compra"> <!--Cuerpo del documento-->
+            <div class="item" id="imagen-compra">
+                <img src="../Imagenes/Especiero_Sin_fondo.PNG" id="especiero-final">
+                <h1>Especiero de madera</h1>
+            </div>
+            <form class="item" id="formulario-compra"> 
+                <div class="container">
+                    <div class="item" id="titulo"><h1>DATOS DE COMPRA</h1></div>
+                    <div class="item" id="input-nombre">
+                        <label for="" id="label-nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre" id="Nombre" required>
+                    </div>
+                    <div class="item" id="input-apellido">
+                        <label for="" id="label-apellido">Apellido</label>
+                        <input type="text" placeholder="Ingrese su apellido" id="apellido" required>
+                    </div>
+                    <div class="item" id="input-dirección" >
+                        <label for="" id="label-dirección">Dirección</label>
+                        <input type="text" placeholder="Ingrese su dirección" id="dirección" required>
+                    </div>
+                    <div class="item" id="input-cp">
+                        <label for="" id="label-cp">Código Postal</label>
+                        <input type="text" placeholder="Ingrese su código postal" id="codigo-postal" required>
+                    </div>
+                    <div class="item">
+                        <Label for="" id="label-lista-productos">Escoge el producto</Label>
+                        <input list="productos-lista" name="Producto" id="lista-productos">
+                        <datalist id="productos-lista">
+                            <option value="Mesa">
+                            <option value="Librero">
+                            <option value="Mesa de luz">
+                            <option value="Cajonera">
+                            <option value="Especiero">
+                            <option value="Silla">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="" id="label-cantidad">Ingrese la cantidad</label>
+                        <input type="number" id="cantidad">
+                    </div>
+                    <input type="button" onclick="devolverReciboDeCompra()" value="Confirmar compra" id="boton-confirmarCompra">
+                </div>
+            </form>
+        </div>
+
+        <footer class="container" id="Contacto"> <!--Franja inferior con información de contacto-->
+            <div class="item" id="telefono">
+                <label for="">Teléfono</label>
+                <h2>+54 9 11 5555 3333</h2>
+            </div>
+            <div class="item" id="correo">
+                <label for="">Mail</label>
+                <h2>atencion.al.cliente@casanova.com</h2>
+            </div>
+            <div class="item" id="instagram">
+                <label for="">Instagram</label>
+                <h2>@casanova.store</h2>
+            </div>
+        </footer>
+    </body>
+</html>
