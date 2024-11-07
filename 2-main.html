@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CASANOVA</title>
+        <link rel="icon" href="Imagenes/Logo_Casa_Nova.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script-main.js"></script>
+    </head>
+    <body>
+        <div class="container" id="Marca"> <!--Franja superior con nombre e ícono de la página-->
+            <div class="item" id="Nombre-Marca">
+                <h1>CASA NOVA</h1>
+            </div>
+            <div class="container" id="indice"> 
+                <div class="item-barra" id="home" onclick="dirigirAHome()">
+                    HOME
+                </div>
+                <div class="item-barra" id="login" onclick="dirigirALogin()">
+                    LOGIN
+                </div>
+            </div>
+            <div class="item">
+                <img src="Imagenes/Logo_Casa_Nova_Sin_fondo.png" id="Icono-Marca">
+            </div>
+        </div>
+        <div class="grid-layout" id="Productos"> <!--Cuerpo de la pagina con todos los productos disponibles-->
+            <div class="caja" id="mesa" onclick="dirigirAMesa()">
+                <label class="etiqueta-productos" for="">Mesa de madera</label>
+                <img src="Imagenes/Mesa_Sin_fondo.png" id="foto">
+                <h2>$50.000</h2>
+            </div>
+            <div class="caja" id="librero" onclick="dirigirALibrero()">
+                <label class="etiqueta-productos" for="">Librero de madera</label>
+                <img src="Imagenes/Librero_Sin_Fondo.PNG" id="foto">
+                <h2>$30.000</h2>
+            </div>
+            <div class="caja" id="mesa-luz" onclick="dirigirAMesaDeLuz()">
+                <label class="etiqueta-productos" for="">Mesa de luz</label>
+                <img src="Imagenes/Mesa_de_luz_Sin_fondo.PNG" id="foto">
+                <h2>$60.000</h2>
+            </div>
+            <div class="caja" id="cajonera" onclick="dirigirACajonera()">
+                <label class="etiqueta-productos" for="">Cajonera de Madera</label>
+                <img src="Imagenes/Cajonera_Sin_Fondo.PNG" id="foto-cajonera">
+                <h2>$80.000</h2>
+            </div>
+            <div class="caja" id="especiero" onclick="dirigirAEspeciero()">
+                <label class="etiqueta-productos" for="">Especiero de Madera</label>
+                <img src="Imagenes/Especiero_Sin_fondo.png" id="foto">
+                <h2>$50.000</h2>
+            </div>
+            <div class="caja" id="silla" onclick="dirigirASilla()">
+                <label class="etiqueta-productos" for="">Silla de Madera</label>
+                <img src="Imagenes/Silla_Sin_fondo.png" id="foto-silla">
+                <h2>$50.000</h2>
+            </div>
+        </div>
+        <footer class="container" id="Contacto"> <!--Franja inferior con información de contacto-->
+            <div class="item" id="telefono">
+                <label for="">Teléfono</label>
+                <h2>+54 9 11 5555 3333</h2>
+            </div>
+            <div class="item" id="correo">
+                <label for="">Mail</label>
+                <h2>atencion.al.cliente@casanova.com</h2>
+            </div>
+            <div class="item" id="instagram">
+                <label for="">Instagram</label>
+                <h2>@casanova.store</h2>
+            </div>
+        </footer>
+    </body>
+</html>

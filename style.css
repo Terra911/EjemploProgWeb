@@ -1,0 +1,355 @@
+/*PROYECTO INTEGRADOR*/         /*Proyecto Integrador hace referencia a la programación común
+                                            a todos los archivos HTML del proyecto*/
+/*Programación general del archivo HTML:*/
+body{
+    background: linear-gradient(gray,rgba(112, 89, 60, 0.939) 30%) fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+} /*Color del fondo de la página*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} /*Ajustes del body para no limitar márgenes*/
+
+/*Fin de programación general del archivo HTML*/
+
+/*HEADER*/          /*Header hace referencia a la franja superior común a todas las páginas*/
+/*Programación del div "Marca":*/
+#Marca{
+    display:flex;
+    border:thick;
+    background-color: rgb(110, 54, 9);
+    width: 100vw;
+    height: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+} /*Configuración del flex*/
+
+#Nombre-Marca{
+    margin-left: 20px;
+    color: white;
+    font-size: larger;
+    font-family: sans-serif
+} /*Configuración del nombre*/
+
+#Icono-Marca{
+    margin-right: 20px;
+    width: 100px;
+    height: 90px;
+} /*Tamaño del Icono*/
+
+#indice{
+    display: grid;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 20px;
+    margin-top: 60px;
+    grid-template-columns: auto auto auto;
+}
+
+.item-barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+    text-align: center;
+    line-height: 20px;
+    width: 100px;
+    height: 20px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.item-barra:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/*Fin de programación del div "Marca"*/
+
+/*CONTACTO*/          /*Contacto hace referencia a la franja inferior común a todas las páginas*/
+/*Programación del div "Contacto":*/
+footer{
+    display:flex;
+    color: white;
+    border:thick;
+    background-color: rgb(110, 54, 9);
+    width: 100vw;
+    height: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+} 
+/*Fin de programación del div "Contacto":*/
+
+/*PROYECTO INTEGRADOR*/
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*LOGIN*/
+
+/*Programación del div "Cuerpo-Login":*/
+#form-login{
+    width:350px;
+    height: 400px;
+    background-color: rgb(110, 54, 9);
+    margin-top: 20px;
+    margin: 50px auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+input{
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+    margin: 10px auto;
+}
+
+#label-usuario{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#label-contraseña{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#boton-input{
+    width: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: block;
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+#boton-input:hover{
+    background-color: red;
+}
+/*Fin de rogramación del div "Cuerpo-Login"*/
+
+/*LOGIN*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*MAIN*/            /*Main es la página principal (HOME) con el catálogo.*/
+
+/*Programación del div "Productos":*/
+#Productos{
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+}
+
+#foto{ /*Programación general del tamaño de todos los elementos con la id "foto"*/
+    width: 250px;
+    height: 250px;
+}
+
+.etiqueta-productos{ /*Programación de las etiquetas con los nombres de los productos en cada caja*/
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#foto-cajonera, #foto-silla{/*Programación específica de dos elementos con tamaños muy distintos a los demás elementos*/
+    width: 200px;
+    height: 270px;
+}
+
+.caja{ /*Programación general de todas las cajas del div*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 550px;
+    border: 4px solid black;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    background-size: cover;
+    background-image: url(Fondo\ de\ madera.jpg);
+}
+
+.caja:hover{ /*Programación de acción al pasar el mouse por arriba de cada caja*/
+    cursor: pointer;
+    border: 4px solid white;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    filter: blur(0.5px);
+}
+/*Fin de programación del div "Productos":*/
+
+/*MAIN*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*FINAL*/       /*Final es la parte de los 6 archivos html que contienen las paginas de compra.*/
+
+/*Programación del div "Compra":*/
+#Compra{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 35% 65%;
+}
+
+#imagen-compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/*Ajuste de cada imagen en específico*/
+#cajonera-final{
+    width: 300px;
+    height: 550px;
+}
+
+#especiero-final{
+    width: 550px;
+    height: 400px;
+}
+
+#librero-final{
+    width: 550px;
+    height: 500px;
+}
+
+#silla-final{
+    width: 300px;
+    height: 500px;
+}
+
+#mesaDeLuz-final{
+    width: 550px;
+    height: 500px;
+}
+
+#mesa-final{
+    margin-top: 90px;
+    width: 450px;
+    height: 400px;
+}
+
+/*Fin de ajuste de cada imagen en específico*/
+
+#formulario-compra{
+    width:500px;
+    height: 680px;
+    background-color: rgb(110, 54, 9);
+    margin: 0px auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+#label-nombre{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#label-apellido{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#label-lista-productos{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+#input-dirección{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#input-cp{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#label-cantidad{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    color: white;
+}
+
+#boton-confirmarCompra{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: black;
+    background-color: chocolate ;
+}
+
+#boton-confirmarCompra:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+/*Fin de programación del div "Compra"*/
+
+/*FINAL*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/*FIN DEL PROYECTO*/
