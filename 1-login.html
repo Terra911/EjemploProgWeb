@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Iniciar sesión</title>
+        <link rel="icon" href="Imagenes/Logo_Casa_Nova.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script-login.js"></script>
+    </head>
+    <body>
+        <div class="container" id="Marca"> <!--Franja superior con nombre e ícono de la página-->
+            <div class="item" id="Nombre-Marca">
+                <h1>CASA NOVA</h1>
+            </div>
+            <div class="item">
+                <img src="Imagenes/Logo_Casa_Nova_Sin_fondo.png" id="Icono-Marca">
+            </div>
+        </div>
+        <form id="form-login"> <!--Formulario de Inicio de sesión-->
+            <h1>INICIAR SESIÓN</h1>
+            <div class="container" id="Cuerpo-Login">
+                <div class="item" id="input-usuario">
+                    <label for="" id="label-usuario">Usuario</label>
+                    <input type="text" placeholder="Ingrese su usuario" id="usuario" required>
+                </div>
+                <div class="item" id="input-contraseña">
+                    <label for="" id="label-contraseña">Contraseña</label>
+                    <input type="password" placeholder="Ingrese su contraseña" id="contraseña" required>
+                </div>
+                <div class="item">
+                    <input type="button" onclick="validacion()" value="Ingresar" id="boton-input">
+                </div>
+            </div>
+        </form>
+        <footer class="container" id="Contacto"> <!--Franja inferior con información de contacto-->
+            <div class="item" id="telefono">
+                <label for="">Teléfono</label>
+                <h2>+54 9 11 5555 3333</h2>
+            </div>
+            <div class="item" id="correo">
+                <label for="">Mail</label>
+                <h2>atencion.al.cliente@casanova.com</h2>
+            </div>
+            <div class="item" id="instagram">
+                <label for="">Instagram</label>
+                <h2>@casanova.store</h2>
+            </div>
+        </footer>
+    </body>
+</html>
